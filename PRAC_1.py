@@ -5,7 +5,7 @@ bot = telepot.Bot(token)
 print (bot.getMe())
 
 ##https://api.telegram.org/bot1329377783:AAHNgLKw7FOGdNMG4zWsEXI6t0y2948TeJM/getUpdates
-#https://api.telegram.org/bot1329377783:AAHNgLKw7FOGdNMG4zWsEXI6t0y2948TeJM/sendMessage?chat_id=1347378905&text=Hii There
+##https://api.telegram.org/bot1329377783:AAHNgLKw7FOGdNMG4zWsEXI6t0y2948TeJM/sendMessage?chat_id=1347378905&text=Hii There
 
 def handle(msg):
   content_type = telepot.glance(msg)
@@ -16,4 +16,4 @@ def handle(msg):
   if content_type == 'text':
     bot.sendMessage(chat_id, "You said '{}'".format(msg["text"]))
     
-  bot.message_loop(handle)
+bot.message_loop(handle)
