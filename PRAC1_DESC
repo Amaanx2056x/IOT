@@ -8,3 +8,13 @@ Steps:
 1. getUpdates() gives the update of the bot
 1. Run the code with `python -i ./PRAC_1.py`
 1. The code will return the msg you sent to the bot as you said "msg"%
+
+
+
+
+Links:
+https://api.telegram.org/(token_id)/getMe 
+
+https://api.telegram.org/bot(token_id)/getUpdates
+
+https://api.telegram.org/bot(token_id)/sendMessage?chat_id=(chat_id)&text=(message)
